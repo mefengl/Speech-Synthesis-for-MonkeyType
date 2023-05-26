@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Speech Synthesis for MonkeyType
 // @namespace    http://github.com/mefengl
-// @version      0.0.1
+// @version      0.0.2
 // @description  A userscript that uses speech synthesis to read out the words on monkeytype.com. This is helpful for improving typing speed while listening to the words.
 // @author       mefengl
 // @match        https://monkeytype.com/
@@ -25,7 +25,7 @@
       }
       lastSpoken = text;
       let utterance = new SpeechSynthesisUtterance(text);
-      utterance.rate = 0.2;
+      utterance.rate = 0.8;
       speechSynthesis.speak(utterance);
     }
   };
